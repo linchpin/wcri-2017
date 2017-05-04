@@ -1,0 +1,19 @@
+{
+  "name": "wcri-2017",
+  "title": "WordCamp RI 2017",
+  "description": "WordCamp RI 2017 styles",
+  "version": "1.0.0",
+  "homepage": "http://2017.rhodeisland.wordcamp.org",
+  "author": {
+    "name": "Linchpin",
+    "email": "team@linchpinagency.com",
+    "url": "http://linchpin.agency"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-watch": "^4.3.5"
+  },
+  "keywords": []
+}
