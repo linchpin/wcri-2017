@@ -1,9 +1,19 @@
 /**
- * 01. Two Column Page
+ * 01. Global
+ * 02. Two Column Page
  */
 
 
-// 01. Two Column Page
+// 01. Global
+
+#main {
+	.wrap {
+		max-width: 100%;
+	}
+}
+
+
+// 02. Two Column Page
 
 body.page.page-two-column {
 	#primary {

@@ -1,5 +1,6 @@
 /**
  * 01. Clearfix
+ * 02. Breakpoint
  */
 
 
@@ -14,5 +15,21 @@
 
 	&:after {
 		clear: both;
+	}
+}
+
+
+// 02. Breakpoint
+
+@mixin breakpoint ( $size ) {
+	$media : 'screen';
+	$breakpoint : map-get( $breakpoints, $size );
+
+	@if ( strip-unit( $breakpoint ) != 0 ) {
+		$media: $media + ' and (min-width: #{$breakpoint})';
+	}
+
+	@media #{$media} {
+		@content;
 	}
 }

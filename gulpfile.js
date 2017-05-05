@@ -27,7 +27,7 @@ gulp.task( 'autoprefixer', ['sass'], function() {
 
 // Watch
 gulp.task( 'watch', ['sass'], function() {
-	gulp.watch('./scss/*.scss', ['sass', 'autoprefixer']);
+	gulp.watch('./scss/**/*.scss', ['sass', 'autoprefixer']);
 } );
 
 
