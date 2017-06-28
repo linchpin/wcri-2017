@@ -41,9 +41,27 @@ form {
 			border: none;
 			&:hover, &:focus, &:active {
 				background-color: white;
-				color: darken($primary-color, 15);
+				color: darken($primary-color, 15) !important;
 			}
 		}
+	}
+}
+
+//Buttons
+a.button, button {
+	font-size: 14px;
+	font-family: $body-font-family;
+	line-height: 1;
+	padding: 1em 2em;
+	font-weight: bold !important;
+	background-color: white;
+	border: 1px solid $primary-color;
+	border-radius: 50px;
+	color: $primary-color;
+
+	&:hover, &:focus, &:active {
+		background-color: $primary-color;
+		color: white !important;
 	}
 }
 
