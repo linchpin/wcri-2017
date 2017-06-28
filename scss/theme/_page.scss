@@ -39,7 +39,7 @@ form {
 	&[role="search"] {
 		button{
 			border: none;
-			&:hover {
+			&:hover, &:focus, &:active {
 				background-color: white;
 				color: darken($primary-color, 15);
 			}

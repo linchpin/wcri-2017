@@ -2,11 +2,15 @@ footer {
   background: $secondary-color;
 
   .social-navigation a {
+    transition: color 0.3s ease-in-out;
     background-color: $primary-color !important;
     color: $secondary-color !important;
-    &:hover {
+    &:hover, &:focus, &:active {
       color: $secondary-color !important;
-      background-color: darken($primary-color, 15);
+      background-color: darken($primary-color, 15) !important;
+      .icon {
+        color: $secondary-color !important;
+      }
     }
   }
 
