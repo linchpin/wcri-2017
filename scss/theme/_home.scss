@@ -63,4 +63,16 @@
 
 		}
 	}
+
+	.cta-block {
+		width: 100%;
+		margin: 1.5%;
+		display: block;
+		float: left;
+		text-align: center;
+		@media screen and (min-width: 767px) {
+			width: 30%;
+		}
+	}
 }
+
