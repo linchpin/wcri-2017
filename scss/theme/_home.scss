@@ -31,7 +31,11 @@
 		display: table-cell !important;
 		vertical-align: middle !important;
 		@media screen and (min-width: 767px) {
-			height: 65% !important;
+			height: 74% !important;
+		}
+
+		.wrap {
+			max-width: 800px !important;
 		}
 
 		.site-branding-text {
@@ -39,24 +43,24 @@
 		}
 
 		a.custom-logo-link {
+			background: {
+				image: url('https://2017.rhodeisland.wordcamp.org/files/2017/06/wcri-logo-full-outline_1.png');
+				size: contain;
+				position: 50%;
+				repeat: no-repeat;
+			};
+			height: 0;
+			margin: 0;
+			max-width: 1000px;
+			width: 100%;
+			padding-bottom: 53.5%;
 			display: inline-block;
 			padding-right: 0;
-			width: 80%;
-			margin: 0 10%;
-			@media screen and (min-width: 480px) {
-				width: 60%;
-				margin: 0 20%;
-			}
-			@media screen and (min-width: 767px) {
-				width: 50%;
-				margin: 0 25%;
+
+			.custom-logo {
+				display: none;
 			}
 
-			img {
-				max-width: 100%;
-				width: 100%;
-				max-height: 100% !important;
-			}
 		}
 	}
 }
