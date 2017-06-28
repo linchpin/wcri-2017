@@ -4,6 +4,10 @@ footer {
   .social-navigation a {
     background-color: $primary-color !important;
     color: $secondary-color !important;
+    &:hover {
+      color: $secondary-color !important;
+      background-color: darken($primary-color, 15);
+    }
   }
 
   .site-info {

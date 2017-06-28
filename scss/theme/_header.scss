@@ -11,13 +11,13 @@
 
           &:after {
             border-color: transparent transparent $primary-color !important;
-            top: 67px;
+            top: 66px;
             right: 56px !important;
           }
 
           &:before {
             border-color: transparent transparent darken($primary-color, 15) !important;
-            top: 67px;
+            top: 66px;
             right: 56px !important;
           }
           &:hover > ul {
@@ -25,6 +25,7 @@
           }
 
           ul.sub-menu {
+            border: none;
             li {
               background-color: $primary-color;
               &:hover {
