@@ -48,9 +48,15 @@ h1, h1.entry-title {
   color: $black;
 }
 
-h2, h2.page-title, h2.entry-title {
-  font-size: 41px;
-  letter-spacing: .07em;
+h2, h2.page-title {
+   font-size: 41px;
+   letter-spacing: .07em;
+   color: $black;
+ }
+
+h2.entry-title {
+  font-size: 41px !important;
+  letter-spacing: .07em !important;
   color: $black;
 }
 
