@@ -10,3 +10,202 @@ $breakpoints : (
 	medium : 48em,
 	large : 80em
 );
+
+////
+// Start of Foundation variables, these control the
+// styling output of all the Foundation elements.
+////
+
+//// 01. Global variables
+//// 02. Typography variables
+//// 03. Breadcrumbs variables
+//// 04. Dropdown variables
+//// 05. Button variables
+//// 06. Button group variables
+//// 07. Callout variables
+//// 08. Label variables
+//// 09. Media object variables
+//// 10. Tooltip variables
+
+/// 01. Global variables
+$global-font-size: 100%;
+$global-width: rem-calc(1200);
+$global-lineheight: 1.5em;
+$primary-color: #C8A762;
+$secondary-color: #2E3C55;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$light-gray: #878787;
+$medium-gray: #878787;
+$dark-gray: #878787;
+$black: #0a0a0a;
+$white: #fefefe;
+$dark-blue: #071C33;
+$body-background: $white;
+$body-font-color: $dark-blue;
+$body-font-family: "mr-eaves-xl-modern", Helvetica, Roboto, Arial, sans-serif;
+$body-antialiased: true;
+$global-margin: 1rem;
+$global-padding: 1rem;
+$global-weight-normal: normal;
+$global-weight-bold: bold;
+$global-radius: 0;
+$global-text-direction: ltr;
+
+/// 2. Typography Variables
+$header-font-family: "boucherie-block", Helvetica, Roboto, Arial, sans-serif;
+$header-font-weight: $global-weight-normal;
+$header-font-style: normal;
+$font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
+
+$header-sizes: (
+				small: (
+								'h1': 24,
+								'h2': 20,
+								'h3': 19,
+								'h4': 18,
+								'h5': 17,
+								'h6': 16,
+				),
+				medium: (
+								'h1': 48,
+								'h2': 40,
+								'h3': 31,
+								'h4': 25,
+								'h5': 20,
+								'h6': 16,
+				),
+);
+
+$header-color: inherit;
+$header-lineheight: 1.4;
+$header-margin-bottom: 0.5rem;
+$header-text-rendering: optimizeLegibility;
+$small-font-size: 80%;
+$header-small-font-color: $medium-gray;
+$paragraph-lineheight: 1.6;
+$paragraph-margin-bottom: 1rem;
+$paragraph-text-rendering: optimizeLegibility;
+$code-color: $black;
+$code-font-family: $font-family-monospace;
+$code-font-weight: $global-weight-normal;
+$code-background: $light-gray;
+$code-border: 1px solid $medium-gray;
+$code-padding: rem-calc(2 5 1);
+$anchor-color: $primary-color;
+$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-text-decoration: none;
+$anchor-text-decoration-hover: none;
+$hr-width: $global-width;
+$hr-border: 1px solid $medium-gray;
+$hr-margin: rem-calc(20) auto;
+$list-lineheight: $paragraph-lineheight;
+$list-margin-bottom: $paragraph-margin-bottom;
+$list-style-type: disc;
+$list-style-position: outside;
+$list-side-margin: 1.25rem;
+$list-nested-side-margin: 1.25rem;
+$defnlist-margin-bottom: 1rem;
+$defnlist-term-weight: $global-weight-bold;
+$defnlist-term-margin-bottom: 0.3rem;
+$blockquote-color: $dark-gray;
+$blockquote-padding: rem-calc(9 20 0 19);
+$blockquote-border: 1px solid $medium-gray;
+$cite-font-size: rem-calc(13);
+$cite-color: $dark-gray;
+$keystroke-font: $font-family-monospace;
+$keystroke-color: $black;
+$keystroke-background: $light-gray;
+$keystroke-padding: rem-calc(2 4 0);
+$keystroke-radius: $global-radius;
+$abbr-underline: 1px dotted $black;
+
+/// .02 Top Bar variables
+$topbar-padding: 0.5rem;
+$topbar-background: $light-gray;
+$topbar-title-spacing: 1rem;
+
+/// 03. Breadcrumbs variables
+$breadcrumbs-margin: 0 0 $global-margin 0;
+$breadcrumbs-margin: $global-margin 0;
+$breadcrumbs-item-font-size: rem-calc(11);
+$breadcrumbs-item-color: $primary-color;
+$breadcrumbs-item-color-current: $black;
+$breadcrumbs-item-color-disabled: $medium-gray;
+$breadcrumbs-item-margin: 0.75rem;
+$breadcrumbs-item-uppercase: true;
+$breadcrumbs-item-slash: true;
+
+/// 04. Dropdown variables
+$dropdown-padding: 1rem;
+$dropdown-border: 1px solid $medium-gray;
+$dropdown-font-size: 1rem;
+$dropdown-width: 300px;
+$dropdown-radius: $global-radius;
+
+$dropdown-sizes: (
+				tiny: 100px,
+				small: 200px,
+				large: 400px,
+);
+
+/// 05. Button variables
+$button-padding: 0.85em 1em;
+$button-margin: 0 0 $global-margin 0;
+$button-fill: solid;
+$button-background: $primary-color;
+$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-color: #fff;
+$button-color-alt: #000;
+$button-radius: $global-radius;
+
+$button-sizes: (
+				tiny: 0.6rem,
+				small: 0.75rem,
+				default: 0.9rem,
+				large: 1.25rem,
+);
+
+$button-opacity-disabled: 0.25 !default;
+
+/// 06. Button group variables
+$buttongroup-margin: 1rem;
+$buttongroup-spacing: 1px;
+$buttongroup-child-selector: '.button';
+$buttongroup-expand-max: 6;
+
+/// 07. Callout variables
+$callout-background: $white;
+$callout-background-fade: 85%;
+$callout-border: 1px solid rgba($black, 0.25);
+$callout-margin: 0 0 1rem 0;
+$callout-padding: 1rem;
+$callout-font-color: $body-font-color;
+$callout-font-color-alt: $body-background;
+$callout-radius: $global-radius;
+$callout-link-tint: 30%;
+
+/// 08. Label variables
+$label-background: $primary-color;
+$label-color: foreground($label-background);
+$label-font-size: 0.8rem;
+$label-padding: 0.33333rem 0.5rem;
+$label-radius: $global-radius;
+
+/// 09. Media object variables
+$mediaobject-margin-bottom: $global-margin;
+$mediaobject-section-padding: $global-padding;
+$mediaobject-image-width-stacked: 100%;
+
+/// 10. Tooltip variables
+$has-tip-font-weight: $global-weight-bold;
+$has-tip-border-bottom: dotted 1px $dark-gray;
+$tooltip-background-color: $black;
+$tooltip-color: $white;
+$tooltip-padding: 0.75rem;
+$tooltip-font-size: $small-font-size;
+$tooltip-pip-width: 0.75rem;
+$tooltip-pip-height: $tooltip-pip-width * 0.866;
+$tooltip-pip-offset: 1.25rem;
+$tooltip-radius: $global-radius;

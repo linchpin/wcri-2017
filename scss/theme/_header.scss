@@ -1,0 +1,43 @@
+.navigation-top {
+  border-bottom: 1px solid $primary-color !important;
+  .wrap {
+    padding: 0 2em !important;
+    .main-navigation {
+      ul {
+        li {
+          a {
+            padding: 1.75em 1.25em !important;
+          }
+
+          &:after {
+            border-color: transparent transparent $primary-color !important;
+            top: 67px;
+            right: 56px !important;
+          }
+
+          &:before {
+            border-color: transparent transparent darken($primary-color, 15) !important;
+            top: 67px;
+            right: 56px !important;
+          }
+          &:hover > ul {
+            top: 72px;
+          }
+
+          ul.sub-menu {
+            li {
+              background-color: $primary-color;
+              &:hover {
+                background-color: darken($primary-color, 15);
+              }
+              a {
+                padding: 1em 1.25em !important;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

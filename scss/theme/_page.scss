@@ -12,6 +12,50 @@
 	}
 }
 
+form {
+	input {
+		font-family: $body-font-family !important;
+	}
+	input:focus, textarea:focus {
+		border-color: $primary-color!important;
+	}
+
+	input[type="submit"], button {
+		background-color: white;
+		border: 1px solid $primary-color;
+		border-radius: 50px;
+		color: $primary-color;
+		&:hover {
+			background-color: $primary-color;
+			color: white;
+
+		}
+		&:focus, &:active {
+			background-color: $primary-color;
+			color: white;
+		}
+	}
+
+	&[role="search"] {
+		button{
+			border: none;
+			&:hover {
+				background-color: white;
+				color: darken($primary-color, 15)
+			}
+		}
+	}
+}
+
+header.entry-header {
+	margin-bottom: 0 !important;
+}
+
+/* Page Header --  Excludes the home page */
+.custom-logo-link {
+	display: none;
+}
+
 
 // 02. Two Column Page
 

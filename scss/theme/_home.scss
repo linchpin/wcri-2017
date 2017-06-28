@@ -19,3 +19,44 @@
 		}
 	}
 }
+
+
+//add logo to just home page and center in middle of header image
+
+
+/* Home Page Hero ONLY */
+
+.home {
+	.site-branding {
+		display: table-cell !important;
+		vertical-align: middle !important;
+		@media screen and (min-width: 767px) {
+			height: 65% !important;
+		}
+
+		.site-branding-text {
+			display: none;
+		}
+
+		a.custom-logo-link {
+			display: inline-block;
+			padding-right: 0;
+			width: 80%;
+			margin: 0 10%;
+			@media screen and (min-width: 480px) {
+				width: 60%;
+				margin: 0 20%;
+			}
+			@media screen and (min-width: 767px) {
+				width: 50%;
+				margin: 0 25%;
+			}
+
+			img {
+				max-width: 100%;
+				width: 100%;
+				max-height: 100% !important;
+			}
+		}
+	}
+}
