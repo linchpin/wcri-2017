@@ -13,7 +13,8 @@
 }
 
 form {
-	input {
+	font-family: $body-font-family !important;
+	input, textarea, select, button {
 		font-family: $body-font-family !important;
 	}
 	input:focus, textarea:focus {
@@ -51,8 +52,25 @@ form {
 		tr {
 			.tix-right {
 				width: 100%;
+
 				input[type="text"], input[type="email"] , textarea, select {
+					font-family: $body-font-family !important;
 					width: 100%;
+				}
+
+				select {
+					border-radius: 3px !important;
+					border-bottom-right-radius: 3px !important;
+					border-bottom-left-radius: 3px !important;
+					border-top-right-radius: 3px !important;
+					border-top-left-radius: 3px !important;
+					background-color: white;
+					font-family: $body-font-family !important;
+
+					option {
+						background-color: white !important;
+						font-family: $body-font-family !important;
+					}
 				}
 			}
 		}
