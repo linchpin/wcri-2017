@@ -45,6 +45,18 @@ form {
 			}
 		}
 	}
+
+	//Tickets Form
+	.tix-attendee-form {
+		tr {
+			.tix-right {
+				width: 100%;
+				input {
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
 //Buttons
