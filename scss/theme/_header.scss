@@ -3,10 +3,69 @@
   .wrap {
     padding: 0 2em !important;
     .main-navigation {
+      li {
+        @media screen and (max-width: 766px) {
+          border-bottom: 1px solid #d8d8d8;
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+
+     ul#top-menu {
+       @media screen and (max-width: 767px) {
+         border-top: 1px solid #d8d8d8 !important;
+       }
+     }
+
+      .menu-scroll-down {
+        display:none;
+      }
+
+      button.menu-toggle, button.dropdown-toggle {
+        &:hover, &:active, &:focus {
+          color: black !important;
+          outline: none;
+        }
+      }
+
+      button.dropdown-toggle {
+        padding: 1em .75em !important;
+      }
+
       ul {
+
+        .ticket-cta {
+          text-align: center;
+          @media screen and (min-width: 767px) {
+            float: right;
+          }
+          a {
+            padding: 1em 2em !important;
+            background-color: white;
+            border: 1px solid $primary-color;
+            border-radius: 50px;
+            color: $primary-color;
+            margin: .65em 1em !important;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+              background-color: $primary-color;
+              color: white;
+            }
+          }
+        }
+
         li {
           a {
-            padding: 1.75em 1.25em !important;
+            padding: 1em .75em !important;
+            @media screen and (min-width: 767px) {
+              padding: 1.75em .75em !important;
+            }
+            @media screen and (min-width: 817px) {
+              padding: 1.75em 1.25em !important;
+
+            }
           }
 
           &:after {
@@ -25,15 +84,30 @@
           }
 
           ul.sub-menu {
+            padding: 0;
             border: none;
             li {
-              background-color: $primary-color;
+              background-color: #F6F6F6;
+              transition: color 0.3s ease-in-out;
+              @media screen and (min-width: 767px) {
+                background-color: $primary-color;
+              }
               &:hover {
-                background-color: darken($primary-color, 15);
+                background-color: darken(#F6F6F6, 15);
+                a {
+                  color: white;
+                }
+                @media screen and (min-width: 767px) {
+                  background-color: darken($primary-color, 15);
+
+                }
               }
               a {
-                padding: 1em 1.25em !important;
-                color: white;
+                padding: 1em .75em !important;
+                color: $primary-color;
+                @media screen and (min-width: 767px) {
+                  color: white;
+                }
               }
             }
           }
