@@ -78,15 +78,33 @@
             border-color: transparent transparent $primary-color !important;
             top: 66px;
             right: 56px !important;
+            @media screen and (min-width: 766px) {
+              top: 65px;
+            }
+            @media screen and (min-width: 904px) {
+              top: 66px;
+            }
           }
 
           &:before {
             border-color: transparent transparent darken($primary-color, 15) !important;
             top: 66px;
             right: 56px !important;
+            @media screen and (min-width: 766px) {
+              top: 65px;
+            }
+            @media screen and (min-width: 904px) {
+              top: 66px;
+            }
           }
           &:hover > ul {
             top: 72px;
+            @media screen and (min-width: 766px) {
+              top: 71px;
+            }
+            @media screen and (min-width: 904px) {
+              top: 71px;
+            }
           }
 
           ul.sub-menu {
