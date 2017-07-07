@@ -41,13 +41,16 @@
             float: right;
           }
           a {
-            padding: 1em 2em !important;
+            padding: 1em 1.5em !important;
             background-color: white;
             border: 1px solid $primary-color;
             border-radius: 50px;
             color: $primary-color;
-            margin: .65em 1em !important;
+            margin: .65em 0 .65em 1em !important;
             transition: color 0.3s ease-in-out;
+            @media screen and (min-width: 904px) {
+              padding: 1em 2em !important;
+            }
 
             &:hover {
               background-color: $primary-color;
@@ -59,11 +62,14 @@
         li {
           a {
             padding: 1em .75em !important;
-            @media screen and (min-width: 767px) {
-              padding: 1.75em .75em !important;
+            font-size: 100%;
+            @media screen and (min-width: 766px) {
+              padding: 1.75em .7em !important;
+              font-size: 95%;
             }
-            @media screen and (min-width: 817px) {
+            @media screen and (min-width: 904px) {
               padding: 1.75em 1.25em !important;
+              font-size: 100%;
 
             }
           }
