@@ -42,10 +42,10 @@
           }
           a {
             padding: 1em 1.5em !important;
-            background-color: white;
+            background-color: $primary-color;
+            color: white;
             border: 1px solid $primary-color;
             border-radius: 50px;
-            color: $primary-color;
             margin: .65em 0 .65em 1em !important;
             transition: color 0.3s ease-in-out;
             @media screen and (min-width: 904px) {
@@ -53,8 +53,8 @@
             }
 
             &:hover {
-              background-color: $primary-color;
-              color: white;
+              background-color: white;
+              color: $primary-color;
             }
           }
         }
