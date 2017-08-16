@@ -1,6 +1,7 @@
 /**
  * 01. Global
- * 02. Two Column Page
+ * 02. One Column Page
+ * 03. Two Column Page
  */
 
 
@@ -143,7 +144,16 @@ header.entry-header {
 }
 
 
-// 02. Two Column Page
+// 02. One Column Page
+
+body.page.page-one-column:not(.twentyseventeen-front-page) {
+	#primary {
+		max-width: $global-width;
+	}
+}
+
+
+// 03. Two Column Page
 
 body.page.page-two-column {
 	#primary {
