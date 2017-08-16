@@ -20,3 +20,41 @@ footer {
     }
   }
 }
+
+.site-footer {
+  .wrap {
+    max-width: 100%;
+    padding: 0 0 1.5em;
+  }
+
+  .widget-area {
+    padding-top: 0;
+
+    .widget-column {
+      width: 100%;
+    }
+  }
+
+  .wcb_widget_sponsors {
+    .sponsor-level {
+      backrground: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .sponsor-level-title {
+      display: none;
+    }
+
+    .sponsor-logo {
+      display: inline-block;
+      padding: 10px;
+      vertical-align: middle;
+
+      img {
+        box-shadow: none;
+        max-width: 300px;
+      }
+    }
+  }
+}
