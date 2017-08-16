@@ -29,7 +29,7 @@ $breakpoints : (
 
 /// 01. Global variables
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: 1200px;
 $global-lineheight: 1.5em;
 $primary-color: #C8A762;
 $secondary-color: #2E3C55;
@@ -60,22 +60,22 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 
 $header-sizes: (
-				small: (
-								'h1': 24,
-								'h2': 20,
-								'h3': 19,
-								'h4': 18,
-								'h5': 17,
-								'h6': 16,
-				),
-				medium: (
-								'h1': 48,
-								'h2': 40,
-								'h3': 31,
-								'h4': 25,
-								'h5': 20,
-								'h6': 16,
-				),
+	small: (
+		'h1': 24,
+		'h2': 20,
+		'h3': 19,
+		'h4': 18,
+		'h5': 17,
+		'h6': 16,
+	),
+	medium: (
+		'h1': 48,
+		'h2': 40,
+		'h3': 31,
+		'h4': 25,
+		'h5': 20,
+		'h6': 16,
+	),
 );
 
 $header-color: inherit;
