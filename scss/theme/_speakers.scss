@@ -7,9 +7,29 @@
 
 .wcorg-speakers {
 	.wcorg-speaker {
+		.wcorg-speaker-description {
+			position: relative;
+
+			&:before {
+				content: '';
+
+				background: {
+					image: url('https://2017.rhodeisland.wordcamp.org/files/2017/08/wcri-gravitar-frame@2x.png');
+			    	size: 140px;
+			    };
+			    height: 140px;
+			    width: 140px;
+			    
+			    position: absolute;
+			    left: 0px;
+			    top: 5px;
+			}
+		}
+
 		.photo {
+			border-radius: 100px;
 			float: left;
-			margin: 0 10px 10px 0;
+			margin: 0 30px 20px 20px;
 		}
 	}
 }

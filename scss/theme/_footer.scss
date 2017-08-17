@@ -56,7 +56,25 @@ footer {
 
       img {
         box-shadow: none;
-        max-width: 300px;
+        max-height: 90px;
+      }
+    }
+
+    .sponsor-level {
+      &.bronze {
+        .sponsor-logo img {
+          max-height: 50px;
+        }
+      }
+
+      &.rosecliff {
+        .sponsor-logo img {
+          max-height: 30px;
+        }
+      }
+
+      &.topiary-garden {
+        display: none !important;
       }
     }
   }

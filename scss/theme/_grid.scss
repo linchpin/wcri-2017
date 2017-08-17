@@ -1,0 +1,24 @@
+/**
+ * 01. Grid Settings
+ */
+
+
+// 01. Grid Settings
+
+$columns: 12;
+
+@each $label, $value in $breakpoints {
+	$media_query: 'screen';
+
+	@if ($value != 0) {
+		$media_query: '#{$media_query} and (min-width: #{$value})';
+	}
+
+	@media #{$media_query} {
+		@for $i from 1 through $columns {
+			.#{$label}-#{$i} {
+				width: $i/$columns * 100%;
+			}
+		}
+	}
+}
