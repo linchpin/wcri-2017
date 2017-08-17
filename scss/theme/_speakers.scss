@@ -7,6 +7,16 @@
 
 .wcorg-speakers {
 	.wcorg-speaker {
+		@include clearfix;
+
+		padding-bottom: 10px;
+
+		+ .wcorg-speaker {
+			border-top: 1px solid $primary-color;
+			margin-top: 10px;
+			padding-top: 10px;
+		}
+
 		.wcorg-speaker-description {
 			position: relative;
 
@@ -23,6 +33,10 @@
 			    position: absolute;
 			    left: 0px;
 			    top: 5px;
+			}
+
+			*:last-child {
+				margin-bottom: 0;
 			}
 		}
 
