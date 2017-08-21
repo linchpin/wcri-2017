@@ -1,31 +1,43 @@
 .wcorg-sponsors {
-  [class^="wcorg-sponsor-level"]{
+  [class^="wcorg-sponsor-level"] {
+    padding-top: 3rem;
     h2 {
+      text-align: center;
 
+    }
+    .wcorg-sponsor {
+      h3 {
+        width: 70%;
+        margin-left: 30%;
+        padding-left: 2rem !important;
+      }
+      .wcorg-sponsor-description {
+        img {
+          width: 30%;
+
+        }
+        p {
+          width: 70%;
+          margin-left: 30%;
+          padding-left: 2rem;
+        }
+        ul {
+          width: 70%;
+          margin-left: 30%;
+          padding-left: 5rem;
+
+        }
+      }
     }
   }
-  .wcorg-sponsor {
-    h3 {
-      width: 70%;
-      margin-left: 30%;
-      padding-left: 2rem !important;
-    }
-    .wcorg-sponsor-description {
-      img {
-        width: 30%;
+}
 
-      }
-      p {
-        width: 70%;
-        margin-left: 30%;
-        padding-left: 2rem;
-      }
-      ul {
-        width: 70%;
-        margin-left: 30%;
-        padding-left: 5rem;
-
-      }
-    }
+//single sponsor page
+.single-featured-image-header {
+  img {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em;
   }
 }
