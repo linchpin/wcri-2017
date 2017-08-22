@@ -1,62 +1,60 @@
-.wcorg-sponsors {
-  [class^="wcorg-sponsor-level"] {
-    padding-top: 3rem;
-    h2 {
-      text-align: center;
-      position: relative;
-      padding-bottom: 3rem !important;
+[class^="wcorg-sponsor-level"] {
+  padding-top: 3rem;
+  h2 {
+    text-align: center;
+    position: relative;
+    padding-bottom: 3rem !important;
 
-      &:before {
-        content: '';
-        width: 33%;
-        height: 31px;
-        position: absolute;
-        top: 12px;
-        left: 0;
-        background: {
-          image: url('https://2017.rhodeisland.wordcamp.org/files/2017/08/band-02.png');
-          size: auto 100%;
-          position: left;
-          repeat: no-repeat;
-        };
+    &:before {
+      content: '';
+      width: 33%;
+      height: 31px;
+      position: absolute;
+      top: 12px;
+      left: 0;
+      background: {
+        image: url('https://2017.rhodeisland.wordcamp.org/files/2017/08/band-02.png');
+        size: auto 100%;
+        position: left;
+        repeat: no-repeat;
+      };
 
-        @media screen and ('max-width: 1110px'){
-          width: 25%;
-        }
-
-        @media screen and ('max-width: 785px') {
-          width: 15%;
-        }
-
-        @media screen and ('max-width: 560px') {
-          display: none;
-        }
+      @media screen and ('max-width: 1110px'){
+        width: 25%;
       }
-      &:after {
-        content: '';
-        width: 33%;
-        height: 31px;
-        position: absolute;
-        top: 12px;
-        right: 0;
-        background: {
-          image: url('https://2017.rhodeisland.wordcamp.org/files/2017/08/band-01.png');
-          size: auto 100%;
-          position: right;
-          repeat: no-repeat;
-        };
 
-        @media screen and ('max-width: 1110px'){
-          width: 25%;
-        }
+      @media screen and ('max-width: 785px') {
+        width: 15%;
+      }
 
-        @media screen and ('max-width: 785px') {
-          width: 15%;
-        }
+      @media screen and ('max-width: 560px') {
+        display: none;
+      }
+    }
+    &:after {
+      content: '';
+      width: 33%;
+      height: 31px;
+      position: absolute;
+      top: 12px;
+      right: 0;
+      background: {
+        image: url('https://2017.rhodeisland.wordcamp.org/files/2017/08/band-01.png');
+        size: auto 100%;
+        position: right;
+        repeat: no-repeat;
+      };
 
-        @media screen and ('max-width: 560px') {
-          display: none;
-        }
+      @media screen and ('max-width: 1110px'){
+        width: 25%;
+      }
+
+      @media screen and ('max-width: 785px') {
+        width: 15%;
+      }
+
+      @media screen and ('max-width: 560px') {
+        display: none;
       }
     }
   }
@@ -67,21 +65,48 @@
     width: 70%;
     margin-left: 30%;
     padding-left: 2rem !important;
+
+    @media screen and ('max-width: 700px') {
+      width: 100%;
+      display: block;
+      margin: 0;
+      padding-left: 0 !important;
+      text-align: center;
+    }
+
   }
   .wcorg-sponsor-description {
     img {
       width: 30%;
+      @media screen and ('max-width: 700px') {
+        width: 70%;
+        display: block;
+        margin: 0 15% 1rem ;
+      }
 
     }
     p {
       width: 70%;
       margin-left: 30%;
       padding-left: 2rem;
+
+      @media screen and ('max-width: 700px') {
+        width: 100%;
+        margin-left: 0;
+        display: block;
+        padding-left: 0;
+      }
+
     }
     ul {
       width: 70%;
       margin-left: 30%;
       padding-left: 5rem;
+      @media screen and ('max-width: 700px') {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 3rem;
+      }
 
     }
   }
