@@ -3,8 +3,63 @@
     padding-top: 3rem;
     h2 {
       text-align: center;
+      position: relative;
+      padding-bottom: 3rem !important;
 
+      &:before {
+        content: '';
+        width: 33%;
+        height: 31px;
+        position: absolute;
+        top: 12px;
+        left: 0;
+        background: {
+          image: url('https://2017.rhodeisland.wordcamp.org/files/2017/08/band-02.png');
+          size: auto 100%;
+          position: left;
+          repeat: no-repeat;
+        };
+
+        @media screen and ('max-width: 1110px'){
+          width: 25%;
+        }
+
+        @media screen and ('max-width: 785px') {
+          width: 15%;
+        }
+
+        @media screen and ('max-width: 560px') {
+          display: none;
+        }
+      }
+      &:after {
+        content: '';
+        width: 33%;
+        height: 31px;
+        position: absolute;
+        top: 12px;
+        right: 0;
+        background: {
+          image: url('https://2017.rhodeisland.wordcamp.org/files/2017/08/band-01.png');
+          size: auto 100%;
+          position: right;
+          repeat: no-repeat;
+        };
+
+        @media screen and ('max-width: 1110px'){
+          width: 25%;
+        }
+
+        @media screen and ('max-width: 785px') {
+          width: 15%;
+        }
+
+        @media screen and ('max-width: 560px') {
+          display: none;
+        }
+      }
     }
+
     .wcorg-sponsor {
       h3 {
         width: 70%;
