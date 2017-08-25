@@ -37,8 +37,8 @@
 			}
 
 			&.global-session {
-				&[class*="keynote"] {
-					background-color: $secondary-color;
+				[class*="wcb-session-keynote"] {
+					background-color: $secondary-color !important;
 				}
 			}
 		}
