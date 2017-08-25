@@ -35,6 +35,12 @@
 					background: rgba(white, .1);
 				}
 			}
+
+			&.global-session {
+				&[class*="keynote"] {
+					background-color: $secondary-color;
+				}
+			}
 		}
 
 		td {
@@ -50,5 +56,9 @@
 		&:first-child {
 			padding-left: .4em;
 		}
+	}
+
+	.wcpt-session-speakers {
+		display: block;
 	}
 }
