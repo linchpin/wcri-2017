@@ -22,16 +22,21 @@
 
 	tbody {
 		> tr {
+			border: {
+				bottom: 3px solid white;
+				top: 3px solid white;
+			};
+
 			&:nth-of-type(even) {
 				background: scale-color($primary-color, $lightness: 80%);
 
-				td:nth-of-type(2) {
+				td:nth-of-type(n + 2) {
 					background: rgba(white, .2);
 				}
 			}
 
 			&:nth-of-type(odd) {
-				td:nth-of-type(2) {
+				td:nth-of-type(n + 2) {
 					background: rgba(white, .1);
 				}
 			}
@@ -44,8 +49,12 @@
 		}
 
 		td {
+			border-left: 3px solid white;
+			padding: .4em .8em;
+
 			&:first-of-type {
 				background: $primary-color;
+				border-left: none;
 				color: white;
 			}
 		}
@@ -54,7 +63,7 @@
 	th,
 	td {
 		&:first-child {
-			padding-left: .4em;
+			padding-left: .8em;
 		}
 	}
 
