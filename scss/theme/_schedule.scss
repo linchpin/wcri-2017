@@ -7,6 +7,7 @@
 
 .wcpt-schedule {
 	background: scale-color($primary-color, $lightness: 70%);
+	color: $secondary-color;
 	text-align: center;
 
 	thead {
@@ -69,5 +70,9 @@
 
 	.wcpt-session-speakers {
 		display: block;
+
+		a {
+			font-weight: 400;
+		}
 	}
 }
