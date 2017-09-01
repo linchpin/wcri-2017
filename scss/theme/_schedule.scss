@@ -28,18 +28,14 @@
 				top: 3px solid white;
 			};
 
-			&:nth-of-type(even) {
-				background: scale-color($primary-color, $lightness: 80%);
+			background: scale-color($primary-color, $lightness: 80%);
 
-				td:nth-of-type(n + 2) {
-					background: rgba(white, .2);
-				}
+			td {
+				background: rgba(white, .2);
 			}
 
-			&:nth-of-type(odd) {
-				td:nth-of-type(n + 2) {
-					background: rgba(white, .1);
-				}
+			[class*="wcb-speaker-"] {
+				background: scale-color($primary-color, $lightness: 70%);
 			}
 
 			&.global-session {
