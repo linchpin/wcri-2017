@@ -1,30 +1,12 @@
 .wcorg-organizer {
-	float: left;
 	margin: 0 5%;
 	padding: 40px 20px;
-	text-align: center;
-	width: 40%;
 
 	&:nth-of-type(2n + 1) {
 		clear: left;
 	}
 
-	&:nth-of-type(n + 3) {
+	&:nth-of-type(n + 2) {
 		border-top: 1px solid $primary-color;
-	}
-
-	.wcorg-organizer-description {
-		margin: 0 auto;
-		width: 140px;
-	}
-
-	@media screen and ( max-width: 640px ) {
-		@include clearfix;
-		float: none;
-		width: 90%;
-
-		&:nth-of-type(2) {
-			border-top: 1px solid $primary-color;
-		}
 	}
 }
