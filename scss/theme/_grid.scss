@@ -22,3 +22,12 @@ $columns: 12;
 		}
 	}
 }
+
+.row {
+	@include clearfix;
+
+	.columns {
+		float: left;
+		padding: 0 15px;
+	}
+}
