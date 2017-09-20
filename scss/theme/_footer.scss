@@ -101,8 +101,10 @@ footer {
         }
       }
 
-      &.topiary-garden {
-        display: none !important;
+      &.in-kind {
+        .sponsor-logo img {
+          max-height: 24px;
+        }
       }
     }
   }
